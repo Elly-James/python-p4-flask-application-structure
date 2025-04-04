@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+
+# is used to indicate the interpreter that should be used to execute the script. 
+# In this case, #!/usr/bin/env python3 tells the system to use the python3 interpreter found in the user's environment. 
+# the shebang is only needed if you want to run the script directly as an executable (without explicitly calling Python).
+
+
 from flask import Flask
 
 app = Flask(__name__)
@@ -14,3 +20,6 @@ def user(username):
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
+
+
+
